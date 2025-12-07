@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/charli-harrold/static/css/main.fb665e37.css",
-    "main.js": "/charli-harrold/static/js/main.ad6bf31f.js",
+    "main.css": "/charli-harrold/static/css/main.0de8d062.css",
+    "main.js": "/charli-harrold/static/js/main.3e93bfe5.js",
     "static/js/453.13d50bac.chunk.js": "/charli-harrold/static/js/453.13d50bac.chunk.js",
     "index.html": "/charli-harrold/index.html",
-    "main.fb665e37.css.map": "/charli-harrold/static/css/main.fb665e37.css.map",
-    "main.ad6bf31f.js.map": "/charli-harrold/static/js/main.ad6bf31f.js.map",
+    "main.0de8d062.css.map": "/charli-harrold/static/css/main.0de8d062.css.map",
+    "main.3e93bfe5.js.map": "/charli-harrold/static/js/main.3e93bfe5.js.map",
     "453.13d50bac.chunk.js.map": "/charli-harrold/static/js/453.13d50bac.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb665e37.css",
-    "static/js/main.ad6bf31f.js"
+    "static/css/main.0de8d062.css",
+    "static/js/main.3e93bfe5.js"
   ]
 }
