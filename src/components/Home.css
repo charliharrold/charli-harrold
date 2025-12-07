@@ -1,0 +1,23 @@
+.home-container {
+    background: linear-gradient(-45deg, #bed3e7,#827cd5, #f39fec, #c90c0c);
+    animation: gradientBG 20s ease infinite;
+    background-size: 400% 400%;
+    min-height: 100vh;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.content {
+    text-align: center;
+    color: white;
+}
