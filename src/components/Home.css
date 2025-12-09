@@ -3,6 +3,12 @@
     animation: gradientBG 20s ease infinite;
     background-size: 400% 400%;
     min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
 }
 
 @keyframes gradientBG {
@@ -20,4 +26,5 @@
 .content {
     text-align: center;
     color: white;
+    padding-top: 80px;
 }
