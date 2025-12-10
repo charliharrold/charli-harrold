@@ -1,15 +1,16 @@
 {
   "files": {
     "main.css": "/charli-harrold/static/css/main.f50316ff.css",
-    "main.js": "/charli-harrold/static/js/main.a57e0dd3.js",
+    "main.js": "/charli-harrold/static/js/main.60cf279b.js",
     "static/js/453.13d50bac.chunk.js": "/charli-harrold/static/js/453.13d50bac.chunk.js",
+    "static/media/pink-computer-transparent.png": "/charli-harrold/static/media/pink-computer-transparent.f8ac50caae20d5ed843a.png",
     "index.html": "/charli-harrold/index.html",
     "main.f50316ff.css.map": "/charli-harrold/static/css/main.f50316ff.css.map",
-    "main.a57e0dd3.js.map": "/charli-harrold/static/js/main.a57e0dd3.js.map",
+    "main.60cf279b.js.map": "/charli-harrold/static/js/main.60cf279b.js.map",
     "453.13d50bac.chunk.js.map": "/charli-harrold/static/js/453.13d50bac.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f50316ff.css",
-    "static/js/main.a57e0dd3.js"
+    "static/js/main.60cf279b.js"
   ]
 }
