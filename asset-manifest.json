@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/charli-harrold/static/css/main.a571e9e7.css",
-    "main.js": "/charli-harrold/static/js/main.797fa124.js",
+    "main.css": "/charli-harrold/static/css/main.edcc4fdd.css",
+    "main.js": "/charli-harrold/static/js/main.e1546a13.js",
     "static/js/453.13d50bac.chunk.js": "/charli-harrold/static/js/453.13d50bac.chunk.js",
     "static/media/pink-computer-transparent.png": "/charli-harrold/static/media/pink-computer-transparent.f8ac50caae20d5ed843a.png",
     "static/media/ONC-Logo.png": "/charli-harrold/static/media/ONC-Logo.b6d9601dfd7266cf512a.png",
     "static/media/UVic-Logo.png": "/charli-harrold/static/media/UVic-Logo.ad08106f3b444f787969.png",
     "index.html": "/charli-harrold/index.html",
-    "main.a571e9e7.css.map": "/charli-harrold/static/css/main.a571e9e7.css.map",
-    "main.797fa124.js.map": "/charli-harrold/static/js/main.797fa124.js.map",
+    "main.edcc4fdd.css.map": "/charli-harrold/static/css/main.edcc4fdd.css.map",
+    "main.e1546a13.js.map": "/charli-harrold/static/js/main.e1546a13.js.map",
     "453.13d50bac.chunk.js.map": "/charli-harrold/static/js/453.13d50bac.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a571e9e7.css",
-    "static/js/main.797fa124.js"
+    "static/css/main.edcc4fdd.css",
+    "static/js/main.e1546a13.js"
   ]
 }
