@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import './NavigationBar.css';
 import pinkComputer from '../assets/pink-computer-transparent.png';
 
-function NavigationBar() {
+const NavigationBar = () => {
   return (
     <Navbar expand="lg" className="custom-navbar">
       <Container>

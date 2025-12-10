@@ -1,11 +1,37 @@
-.card-container {
-    background: linear-gradient(-45deg, #c3e9ff, #5c70dd);
-    animation: gradientBG;
+.div-style {
+    background: #ffbbff50;
+    padding: 100px;
+    min-height: 100vh;
 }
 
-.card-container-2 {
-    background: linear-gradient(-45deg, #ffc3c3, #dd5c5c);
-    animation: gradientBG;
+.card-container {
+    background: linear-gradient(-45deg, var(--gradient-start), var(--gradient-end));
+    background-size: 200% 200%;
+    animation: gradientBG 15s ease infinite;
+    transition: transform 0.2s;
+}
+
+.card-container:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 10px var(--shadow-color);
+}
+
+.card-container.blue {
+    --gradient-start: #c3e9ff;
+    --gradient-end: #5c70dd;
+    --shadow-color: rgba(130, 108, 255, 0.3);
+}
+
+.card-container.red {
+    --gradient-start: #ffc3c3;
+    --gradient-end: #dd5c5c;
+    --shadow-color: rgba(255, 108, 108, 0.3);
+}
+
+.card-container.yellow {
+    --gradient-start: #fffbc3;
+    --gradient-end: #fdc67f;
+    --shadow-color: rgba(255, 229, 82, 0.3);
 }
 
 @keyframes gradientBG {
