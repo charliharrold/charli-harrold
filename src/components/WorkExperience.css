@@ -1,0 +1,21 @@
+.card-container {
+    background: linear-gradient(-45deg, #c3e9ff, #5c70dd);
+    animation: gradientBG;
+}
+
+.card-container-2 {
+    background: linear-gradient(-45deg, #ffc3c3, #dd5c5c);
+    animation: gradientBG;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

@@ -7,7 +7,7 @@ import pinkComputer from '../assets/pink-computer-transparent.png';
 
 function NavigationBar() {
   return (
-    <Navbar expand="lg" sticky="top" className="custom-navbar">
+    <Navbar expand="lg" className="custom-navbar">
       <Container>
         <Navbar.Brand as={Link} to="/">
           <img src={pinkComputer} style={{ width: '75px', height: '75px', objectFit: 'cover', marginRight: '10px' }} alt='Cute pink computer' />
