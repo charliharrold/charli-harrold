@@ -8,7 +8,7 @@ import './WorkExperience.css'
 
 const WorkExperience = () => {
     return (
-        <div className='div-style'>
+        <div>
             <Container>
                 <Card className='card-container red'>
                     <Row>

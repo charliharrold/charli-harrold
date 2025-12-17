@@ -1,9 +1,3 @@
-.div-style {
-    background: #ffbbff50;
-    padding: 100px;
-    min-height: 100vh;
-}
-
 .card-container {
     background: linear-gradient(-45deg, var(--gradient-start), var(--gradient-end));
     background-size: 200% 200%;

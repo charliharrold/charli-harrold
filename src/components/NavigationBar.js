@@ -10,8 +10,11 @@ const NavigationBar = () => {
     <Navbar expand="lg" className="custom-navbar">
       <Container>
         <Navbar.Brand as={Link} to="/">
-          <img src={pinkComputer} style={{ width: '75px', height: '75px', objectFit: 'cover', marginRight: '10px' }} alt='Cute pink computer' />
-          Charli Harrold
+          <img
+            src={pinkComputer}
+            style={{ width: '75px', height: '75px', objectFit: 'cover', marginRight: '10px' }}
+            alt="Cute pink computer"
+          />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -22,6 +25,7 @@ const NavigationBar = () => {
             <Nav.Link as={Link} to='/work-experience'>Work Experience</Nav.Link>
             <Nav.Link as={Link} to='/volunteering'>Volunteering</Nav.Link>
           </Nav>
+          <span className="ms-auto">Charli Harrold</span>
         </Navbar.Collapse>
       </Container>
     </Navbar>
