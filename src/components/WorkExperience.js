@@ -1,71 +1,117 @@
-import Card from 'react-bootstrap/Card';
-import { Col } from 'react-bootstrap';
-import Row from 'react-bootstrap/Row';
-import Container from 'react-bootstrap/Container';
+import { useState, useEffect, useRef } from 'react';
+import './WorkExperience.css';
 import ONCLogo from '../assets/ONC-Logo.png';
-import UVicLogo from '../assets/UVic-Logo.png';
-import './WorkExperience.css'
+import UvicLogo from '../assets/UVic-Logo.png';
 
-const WorkExperience = () => {
-    return (
-        <div>
-            <Container>
-                <Card className='card-container red'>
-                    <Row>
-                        <Col md={4}>
-                            <Card.Img src={UVicLogo} />
-                        </Col>
-                        <Col md={8}>
-                            <Card.Body>
-                                <Card.Title>Teaching Assistant - Computer Science</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
-                                </Card.Text>
-                            </Card.Body>
-                        </Col>
+export default function WorkExperience() {
+  const [visibleSections, setVisibleSections] = useState(new Set());
+  const sectionsRef = useRef([]);
 
-                    </Row>
-                </Card>
-                <br />
-                <Card className='card-container blue'>
-                    <Row>
-                        <Col md={4}>
-                            <Card.Img src={ONCLogo} style={{ maxHeight: '250px', objectFit: 'contain' }} />
-                        </Col>
-                        <Col md={8}>
-                            <Card.Body>
-                                <Card.Title>Software Developer Co-op - Ocean Networks Canada</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
-                                </Card.Text>
-                            </Card.Body>
-                        </Col>
-                    </Row>
-                </Card>
-                <br />
+  useEffect(() => {
+    const handleScroll = () => {
+      
+      // Check which sections are visible
+      const windowHeight = window.innerHeight;
+      const newVisible = new Set();
+      
+      sectionsRef.current.forEach((section, index) => {
+        if (section) {
+          const rect = section.getBoundingClientRect();
+          if (rect.top < windowHeight * 0.75 && rect.bottom > 0) {
+            newVisible.add(index);
+          }
+        }
+      });
+      
+      setVisibleSections(newVisible);
+    };
 
-                <Card className='card-container yellow'>
-                    <Row>
-                        <Col md={4}>
-                            <Card.Img src={UVicLogo} />
-                        </Col>
-                        <Col md={8}>
-                            <Card.Body>
-                                <Card.Title>Database Assistant - Centre for Accessible Learning</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
-                                </Card.Text>
-                            </Card.Body>
-                        </Col>
-                    </Row>
-                </Card>
-                <br />
-            </Container>
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Initial check
+    
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const workExperiences = [
+    {
+      company: "University of Victoria",
+      role: "Teaching Assistant",
+      period: "September 2025 - Present",
+      description: "Description.",
+      skills: ["Communication", "Teaching", "Problem Solving"],
+      logo: UvicLogo
+    },
+    {
+      company: "Ocean Networks Canada",
+      role: "Software Developer Co-op",
+      period: "September 2024 - April 2025",
+      description: "Description.",
+      skills: ["React", "JavaScript", "Bitbucket", "Java"],
+      logo: ONCLogo
+    },
+    {
+      company: "Database Assistant",
+      role: "UVic Centre for Accessible Learning",
+      period: "DATES",
+      description: "Description.",
+      skills: ["C#", "SQL", "HTML"],
+      logo: UvicLogo
+    }
+  ];
+
+  return (
+    <div className="work-container min-h-screen bg-gradient-to-b from-[#8168a9] via-[#5543e1] to-[#f570c0]">
+      {/* Hero Section with Parallax */}
+
+
+      {/* Experience Cards Section */}
+      <section 
+        ref={el => sectionsRef.current[0] = el}
+        className="min-h-screen py-20 px-4"
+      >
+        <div className="max-w-6xl mx-auto">
+            <br />
+          <h2 className={`text-4xl md:text-5xl font-bold text-white text-center mb-16 transition-all duration-1000 ${
+            visibleSections.has(0) ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          }`}>
+            Work Experience
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            {workExperiences.map((exp, idx) => (
+              <div
+                key={idx}
+                className={`bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20 transition-all duration-700 hover:scale-105 hover:bg-white/20 ${
+                  visibleSections.has(0) 
+                    ? 'opacity-100 translate-x-0'
+                    : idx % 2 === 0 ? 'opacity-0 -translate-x-20' : 'opacity-0 translate-x-20'
+                }`}
+                style={{ transitionDelay: `${idx * 150}ms` }}
+              >
+                <div className="w-40 h-16 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-xl mb-6 flex items-center justify-center">
+                  {/* <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg> */}
+                  <img alt="Company Logo." src={exp.logo} />
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-2">{exp.role}</h3>
+                <p className="text-white font-semibold mb-2">{exp.company}</p>
+                <p className="text-white text-sm mb-4">{exp.period}</p>
+                <p className="text-white mb-4">{exp.description}</p>
+                <div className="flex flex-wrap gap-2">
+                  {exp.skills.map((skill, skillIdx) => (
+                    <span 
+                      key={skillIdx}
+                      className="px-3 py-1 bg-blue-500/30 rounded-full text-xs text-white"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-    )
+      </section>
+    </div>
+  );
 }
-
-export default WorkExperience;

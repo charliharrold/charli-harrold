@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -6,8 +7,19 @@ import './NavigationBar.css';
 import pinkComputer from '../assets/pink-computer-transparent.png';
 
 const NavigationBar = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <Navbar expand="lg" className="custom-navbar">
+    <Navbar expand="lg" className={`custom-navbar ${scrolled ? 'hide' : ''}`}>
       <Container>
         <Navbar.Brand as={Link} to="/">
           <img
@@ -25,8 +37,9 @@ const NavigationBar = () => {
             <Nav.Link as={Link} to='/work-experience'>Work Experience</Nav.Link>
             <Nav.Link as={Link} to='/volunteering'>Volunteering</Nav.Link>
           </Nav>
-          <span className="ms-auto">Charli Harrold</span>
+          
         </Navbar.Collapse>
+        {/* <p>Charli Harrold</p> */}
       </Container>
     </Navbar>
   );

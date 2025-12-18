@@ -1,5 +1,5 @@
 import './Home.css';
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import CharliHarrold from '../assets/charli-photo.jpg'
 import { Col, Row, Container } from 'react-bootstrap';
 

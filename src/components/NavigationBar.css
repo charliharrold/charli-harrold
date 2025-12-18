@@ -1,15 +1,19 @@
 .custom-navbar {
     background-color: transparent;
-    position: absolute;
+    position: fixed;  /* Change from absolute to fixed */
     top: 0;
     z-index: 10;
     width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.custom-navbar.hide {
+    transform: translateY(-100%);
 }
 
 .custom-navbar .navbar-collapse {
     background-color: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
     border-radius: 10px;
     padding: 15px;
     margin-top: 10px;
