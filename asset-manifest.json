@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/charli-harrold/static/css/main.d1a63c01.css",
-    "main.js": "/charli-harrold/static/js/main.8268aa67.js",
+    "main.css": "/charli-harrold/static/css/main.8eb7b64d.css",
+    "main.js": "/charli-harrold/static/js/main.45a6212a.js",
     "static/js/453.13d50bac.chunk.js": "/charli-harrold/static/js/453.13d50bac.chunk.js",
     "static/media/charli-photo.jpg": "/charli-harrold/static/media/charli-photo.c3954ea8ece6e5e1a4f3.jpg",
+    "static/media/WECS-Logo.png": "/charli-harrold/static/media/WECS-Logo.9e7c5fad520ca966a83c.png",
+    "static/media/WIS-Logo.webp": "/charli-harrold/static/media/WIS-Logo.da4ad31df705ea4a9431.webp",
     "static/media/pink-computer-transparent.png": "/charli-harrold/static/media/pink-computer-transparent.f8ac50caae20d5ed843a.png",
     "static/media/ONC-Logo.png": "/charli-harrold/static/media/ONC-Logo.b6d9601dfd7266cf512a.png",
     "static/media/UVic-Logo.png": "/charli-harrold/static/media/UVic-Logo.ad08106f3b444f787969.png",
     "index.html": "/charli-harrold/index.html",
-    "main.d1a63c01.css.map": "/charli-harrold/static/css/main.d1a63c01.css.map",
-    "main.8268aa67.js.map": "/charli-harrold/static/js/main.8268aa67.js.map",
+    "main.8eb7b64d.css.map": "/charli-harrold/static/css/main.8eb7b64d.css.map",
+    "main.45a6212a.js.map": "/charli-harrold/static/js/main.45a6212a.js.map",
     "453.13d50bac.chunk.js.map": "/charli-harrold/static/js/453.13d50bac.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1a63c01.css",
-    "static/js/main.8268aa67.js"
+    "static/css/main.8eb7b64d.css",
+    "static/js/main.45a6212a.js"
   ]
 }
