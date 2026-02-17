@@ -28,3 +28,60 @@
     color: white;
     padding-top: 80px;
 }
+
+.scrap-photo {
+  position: relative;
+  transform: rotate(-2deg);
+}
+
+.scrap-photo::before,
+.scrap-photo::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 25px;
+  background: #FFF9ED;
+  border: 2px solid #7e7e7e;
+  opacity: 0.7;
+  border-radius: 4px;
+}
+
+.scrap-photo--tape-me::before {
+  top: -10px;
+  left: -4%;
+  transform: rotate(-35deg);
+}
+
+.scrap-photo--tape-me::after {
+  top: -10px;
+  left: 92%;
+  transform: rotate(35deg);
+}
+
+.scrap-photo--tape-hashbrown {
+  transform: rotate(2deg);
+}
+
+.scrap-photo--tape-hashbrown::before {
+  top: -10px;
+  left: -2%;
+  transform: rotate(-35deg);
+}
+
+.scrap-photo--tape-hashbrown::after {
+  top: -5px;
+  left: 90%;
+  transform: rotate(35deg);
+}
+
+.scrap-label {
+  font-family: 'Gloria Hallelujah', cursive;
+  transform: rotate(-3deg);
+  padding: 4px -2px;
+  font-size: x-large;
+}
+
+.rotate-arrow {
+    transform: rotate(18deg);
+    max-width: 200px;
+}

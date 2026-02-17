@@ -39,7 +39,6 @@ const NavigationBar = () => {
           </Nav>
           
         </Navbar.Collapse>
-        {/* <p>Charli Harrold</p> */}
       </Container>
     </Navbar>
   );
