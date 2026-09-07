@@ -3,6 +3,7 @@ import CharliHarrold from '../assets/charli-photo.jpg'
 import { Col, Row, Container, Image } from 'react-bootstrap';
 import Arrow from '../assets/arrow-wave-left-down.png';
 import Hashbrown from '../assets/hashbrown.jpg';
+import WorkExperience from './WorkExperience';
 
 const Home = () => {
 
@@ -26,12 +27,20 @@ const Home = () => {
                         </div>
                     </Col>
                 </Row>
-                <br/>
-                <hr/>
+                <br />
+                <hr />
 
-                <h1>About</h1>
-                <br/>
-
+                <h1 className='font-heading-style'>About Me</h1>
+                <Row>
+                    <p className="font-text-style">
+                        I'm currently a fourth-year Computer Science and Math Honours student at the University of Victoria.
+                        <br />
+                        My interests are in the intersection of math and computer science.
+                        I enjoy graph theory, complexity theory, algorithms, abstract algebra, and number theory.
+                        I find that my new favourite field or topic is whatever I most recently learned! Learning is my true passion, and with a dynamic field like computer science, continuous learning is at the heart of it all.
+                    </p>
+                </Row>
+                <br />
                 <Row>
                     <Col md={6} className="flex flex-col items-center">
                         <div className="scrap-photo scrap-photo--tape-me">
@@ -57,12 +66,27 @@ const Home = () => {
 
                     </Col>
                 </Row>
+                <br />
+                <Row>
+                    <div className="mb-20 rounded-3xl p-8 border border-black transition-all duration-300">
+                        <h2 className='font-heading-style'>GitHub Activity</h2>
+                        <p className="font-text-style">
+                            My github chart! I've spent the last year working on a variety of projects!
+                            I used to be very nervous about working on projects, I had no ideas and no clue where to start. Now I enjoy playing around with different projects!
+                        </p>
+                        <div className="rounded-lg overflow-hidden bg-white/5 p-4">
+                            <Image
+                                src="https://ghchart.rshah.org/charliharrold"
+                            />
+                        </div>
+                    </div>
+                </Row>
 
-                <br/>
-                <hr/>
+                <hr />
 
                 <h1>Work Experience</h1>
-                <br/>
+                <WorkExperience />
+                <br />
 
             </Container>
         </div>

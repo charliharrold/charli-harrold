@@ -75,7 +75,7 @@
 }
 
 .scrap-label {
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Gloria Hallelujah';
   transform: rotate(-3deg);
   padding: 4px -2px;
   font-size: x-large;
@@ -84,4 +84,14 @@
 .rotate-arrow {
     transform: rotate(18deg);
     max-width: 200px;
+}
+
+.font-text-style {
+  font-family: 'Gloria Hallelujah';
+  font-size: large;
+}
+
+.font-heading-style {
+  font-family: 'Gloria Hallelujah' bold;
+  font-size: 35px;
 }
