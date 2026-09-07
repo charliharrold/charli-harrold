@@ -1,9 +1,9 @@
 import './Home.css';
 import CharliHarrold from '../assets/charli-photo.jpg'
 import { Col, Row, Container, Image } from 'react-bootstrap';
-import Arrow from '../assets/arrow-wave-left-down.png';
 import Hashbrown from '../assets/hashbrown.jpg';
 import WorkExperience from './WorkExperience';
+import VolunteerExperience from './Volunteering';
 
 const Home = () => {
 
@@ -21,8 +21,8 @@ const Home = () => {
                             </div>
 
                             <div class="font-Archivo font-black flex flex-col justify-center items-center">
-                                <p class="text-5xl md:text-4xl">Computer Science + Math Honours</p>
-                                <p class="text-xl md:text-2xl">University of Victoria</p>
+                                <p class="text-5xl md:text-4xl justify-center">Computer Science + Math Honours</p>
+                                <p class="text-xl md:text-2xl justify-center">University of Victoria</p>
                             </div>
                         </div>
                     </Col>
@@ -32,61 +32,107 @@ const Home = () => {
 
                 <h1 className='font-heading-style'>About Me</h1>
                 <Row>
-                    <p className="font-text-style">
-                        I'm currently a fourth-year Computer Science and Math Honours student at the University of Victoria.
-                        <br />
-                        My interests are in the intersection of math and computer science.
-                        I enjoy graph theory, complexity theory, algorithms, abstract algebra, and number theory.
-                        I find that my new favourite field or topic is whatever I most recently learned! Learning is my true passion, and with a dynamic field like computer science, continuous learning is at the heart of it all.
-                    </p>
-                </Row>
-                <br />
-                <Row>
-                    <Col md={6} className="flex flex-col items-center">
-                        <div className="scrap-photo scrap-photo--tape-me">
-                            <Image src={CharliHarrold} thumbnail />
-                        </div>
-
-                        <div className="flex flex-row items-center mt-4">
-                            <p className="scrap-label mt-2">(that's hashbrown!)</p>
-                            <Image src={Arrow} className="w-40 -scale-x-100 -rotate-45" />
-                        </div>
-                    </Col>
-
-                    <Col md={6} className="flex flex-col items-center">
-                        <div className="flex flex-row items-center">
-                            <Image src={Arrow} className="rotate-arrow" />
-                            <p class="scrap-label mt-2">(that's me!)</p>
-
-                        </div>
-
-                        <div className="scrap-photo scrap-photo--tape-hashbrown">
-                            <Image src={Hashbrown} thumbnail />
-                        </div>
-
-                    </Col>
-                </Row>
-                <br />
-                <Row>
-                    <div className="mb-20 rounded-3xl p-8 border border-black transition-all duration-300">
-                        <h2 className='font-heading-style'>GitHub Activity</h2>
+                    <Col xs={8}>
                         <p className="font-text-style">
-                            My github chart! I've spent the last year working on a variety of projects!
-                            I used to be very nervous about working on projects, I had no ideas and no clue where to start. Now I enjoy playing around with different projects!
+                        
+                            I was born in Glasgow, Scotland and moved to Vancouver, Canada at age 13, then to Victoria in 2021.
+                            
+                            I'm currently a fourth-year Computer Science and Math Honours student at the University of Victoria!
+                            <br /><br />
+                            My journey to computer science wasn't typical. I was dreading the one computer science course required for my physics + astronomy major, but at the end of my first
+                            year it ended up being my favourite course! So, kind of on a whim, I transferred to computer science and I've loved it ever since!
+
+                            <br /><br />
+                            My interests are in discrete math and theoretical computer science. I'm particularly interested in parameterized complexity, combinatorial optimization, number theory, combinatorics,
+                            linear programming, and approximation algorithms. I really just love learning!
+
+                            <br /><br />
+
+                            I am also extremely passionate about teaching and have loved being a Teaching Assistant in the Computer Science department
+                            at UVic for the last year. I have held leadership positions in multiple clubs for women in STEM and participated in a directed studies course
+                            where my final project focused on the causes of the underrepresentation of women in STEM!
+
                         </p>
-                        <div className="rounded-lg overflow-hidden bg-white/5 p-4">
-                            <Image
-                                src="https://ghchart.rshah.org/charliharrold"
-                            />
-                        </div>
-                    </div>
+                    </Col>
+
+                    <Col xs={4}>
+                        <figure>
+                            <Image src={CharliHarrold} thumbnail />
+                            <figcaption style={{ textAlign: "center" }} className="font-text-style">Taken in Königstein, Germany, 2024.</figcaption>
+                        </figure>
+
+                    </Col>
                 </Row>
 
                 <hr />
 
                 <h1>Work Experience</h1>
+                <br/>
                 <WorkExperience />
                 <br />
+
+                <hr />
+                <h1>Volunteer Experience</h1>
+                <VolunteerExperience />
+
+                <hr/>
+                <h1>Scholarships</h1>
+                <p>I am so grateful for the scholarships I have received to support my education!</p>
+
+                <Row>
+                    <Col>
+                        <div class="border-3 border-black rounded-3xl bg-[#fbcfe8bb]">
+                            <h2>BC Women in Technology Scholarship</h2>
+                            <h4>BC Scholarship Society</h4>
+                            <p>Valued at $10,000 and awarded to women who are excelling in Computer/Data Science, Physics, Engineering or Mathematics at the post-secondary level.
+                                My scholarship essay focused on DESCRIPTION OF ESSAY
+                            </p>
+                        </div>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <div class="border-3 border-black rounded-3xl bg-[#fbcfe8bb]">
+                            <h2>Women in STEM Award</h2>
+                            <h4>Zonta Victoria</h4>
+                            <p>
+                            </p>
+                        </div>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <div class="border-3 border-black rounded-3xl bg-[#fbcfe8bb]">
+                            <h2>Woods Trust Scholarship</h2>
+                            <h4>University of Victoria</h4>
+                            <p>
+                            </p>
+                        </div>
+                    </Col>
+                </Row>
+
+                <Row>
+                    <Col>
+                        <div class="border-3 border-black rounded-3xl bg-[#fbcfe8bb]">
+                            <h2>BC Achievement Scholarship</h2>
+                            <h4>Province of British Columbia</h4>
+                            <p>
+                            </p>
+                        </div>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <div class="border-3 border-black rounded-3xl bg-[#fbcfe8bb]">
+                            <h2>Entrance Scholarship</h2>
+                            <h4>University of Victoria</h4>
+                            <p>
+                            </p>
+                        </div>
+                    </Col>
+                </Row>
+
+
 
             </Container>
         </div>
