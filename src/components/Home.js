@@ -4,6 +4,8 @@ import { Col, Row, Container, Image } from 'react-bootstrap';
 import Hashbrown from '../assets/hashbrown.jpg';
 import WorkExperience from './WorkExperience';
 import VolunteerExperience from './Volunteering';
+import Scholarship from './Scholarships';
+import NavigationBar from './NavigationBar';
 
 const Home = () => {
 
@@ -11,6 +13,7 @@ const Home = () => {
         <div class="bg-[#FFFDEB]">
 
             <Container>
+                <NavigationBar />
                 <Row>
                     <Col>
                         <div class="flex flex-col items-center w-full pt-24 border-5 border-black rounded-3xl bg-pink-200">
@@ -30,13 +33,13 @@ const Home = () => {
                 <br />
                 <hr />
 
-                <h1 className='font-heading-style'>About Me</h1>
+                <h1 id="about" className='font-heading-style'>About Me</h1>
                 <Row>
                     <Col xs={8}>
                         <p className="font-text-style">
-                        
+
                             I was born in Glasgow, Scotland and moved to Vancouver, Canada at age 13, then to Victoria in 2021.
-                            
+
                             I'm currently a fourth-year Computer Science and Math Honours student at the University of Victoria!
                             <br /><br />
                             My journey to computer science wasn't typical. I was dreading the one computer science course required for my physics + astronomy major, but at the end of my first
@@ -66,71 +69,30 @@ const Home = () => {
 
                 <hr />
 
-                <h1>Work Experience</h1>
-                <br/>
+                <h1 id="work" className='font-heading-style'>Work Experience</h1>
+                <br />
                 <WorkExperience />
                 <br />
 
                 <hr />
-                <h1>Volunteer Experience</h1>
+                <h1 id="volunteer" className='font-heading-style'>Volunteer Experience</h1>
                 <VolunteerExperience />
 
-                <hr/>
-                <h1>Scholarships</h1>
-                <p>I am so grateful for the scholarships I have received to support my education!</p>
+                <hr />
+                <h1 id="scholarships" className='font-heading-style'>Scholarships</h1>
+                <p className="font-text-style">I am so grateful for the scholarships I have received to support my education!</p>
 
-                <Row>
-                    <Col>
-                        <div class="border-3 border-black rounded-3xl bg-[#fbcfe8bb]">
-                            <h2>BC Women in Technology Scholarship</h2>
-                            <h4>BC Scholarship Society</h4>
-                            <p>Valued at $10,000 and awarded to women who are excelling in Computer/Data Science, Physics, Engineering or Mathematics at the post-secondary level.
-                                My scholarship essay focused on DESCRIPTION OF ESSAY
-                            </p>
-                        </div>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <div class="border-3 border-black rounded-3xl bg-[#fbcfe8bb]">
-                            <h2>Women in STEM Award</h2>
-                            <h4>Zonta Victoria</h4>
-                            <p>
-                            </p>
-                        </div>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <div class="border-3 border-black rounded-3xl bg-[#fbcfe8bb]">
-                            <h2>Woods Trust Scholarship</h2>
-                            <h4>University of Victoria</h4>
-                            <p>
-                            </p>
-                        </div>
-                    </Col>
-                </Row>
+                <Scholarship />
 
-                <Row>
-                    <Col>
-                        <div class="border-3 border-black rounded-3xl bg-[#fbcfe8bb]">
-                            <h2>BC Achievement Scholarship</h2>
-                            <h4>Province of British Columbia</h4>
-                            <p>
-                            </p>
-                        </div>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <div class="border-3 border-black rounded-3xl bg-[#fbcfe8bb]">
-                            <h2>Entrance Scholarship</h2>
-                            <h4>University of Victoria</h4>
-                            <p>
-                            </p>
-                        </div>
-                    </Col>
-                </Row>
+                <hr />
+                <h1 id="proud" className='font-heading-style'>Things I'm Proud Of</h1>
+
+                <p className="font-text-style">
+                    PAPER FROM THE DIRECTED STUDIES COURSE <br />
+
+                    SPEECH FROM NATIONAL DAY REMEMBRANCE VIOLENCE AGAINST WOMEN?
+
+                </p>
 
 
 

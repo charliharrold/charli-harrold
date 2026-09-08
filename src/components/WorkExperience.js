@@ -45,7 +45,7 @@ const workExperiences = [
         description: <p>●	Member of the New Features team, working to create new functionality within the Oceans 3.0 Dashboards <br />
             ●	Designed and implemented a new version of the Latest Readings widget by integrating multiple existing features and using new API services, improving functionality and bringing it more in line with existing dashboard widgets <br />
             ●	Refactored old code by converting components to functional TypeScript and writing comprehensive Cypress tests to ensure maintainability <br />
-            ●	Updated API service calls to modernize code and improve speed
+            ●	Updated API service calls to modernize code and improve speed <br/>
             ●	React, JavaScript, Bitbucket, Java
         </p>,
         logo: ONCLogo
@@ -53,7 +53,7 @@ const workExperiences = [
     {
         company: "UVic Centre for Accessible Learning",
         role: "Database Assistant",
-        period: "DATES",
+        period: "October 2022 - April 2024",
         description: <p>●	Designed and built an automatic job with SQL and C# to identify exam scheduling conflicts and notify students, which runs daily on a production system handling thousands of students <br />
             ●	Wrote documentation of complex database scripts developed under tight timelines <br/>
             ●	C#, SQL, HTML
@@ -70,7 +70,7 @@ function WorkExperienceCard({ experience }) {
             <Row className="p-3">
                 <Col xs={8}>
                     <div className="bg-[#FFFDEB] p-3 rounded-xl">
-                        <p>
+                        <p className="font-text-style">
                             <div style={{fontSize: "1.1rem", fontWeight: "bold"}}>
                                 {experience.role}
                             </div>
@@ -84,7 +84,7 @@ function WorkExperienceCard({ experience }) {
                 </Col>
 
             </Row>
-            <p style={{lineHeight: "1.75", fontSize: "1.1rem"}}>{experience.description}</p>
+            <p className="font-text-style" style={{lineHeight: "1.75", fontSize: "1.1rem"}}>{experience.description}</p>
         </div>
     );
 }
