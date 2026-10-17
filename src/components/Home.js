@@ -6,6 +6,7 @@ import WorkExperience from './WorkExperience';
 import VolunteerExperience from './Volunteering';
 import Scholarship from './Scholarships';
 import NavigationBar from './NavigationBar';
+import WomenInStemFinalPaper from './../assets/Charli_Harrold_Final_Paper.pdf';
 
 const Home = () => {
 
@@ -85,16 +86,34 @@ const Home = () => {
                 <Scholarship />
 
                 <hr />
-                <h1 id="proud" className='font-heading-style'>Things I'm Proud Of</h1>
+                <h1 id="proud" className='font-heading-style'>Something I'm Proud Of</h1>
 
-                <p className="font-text-style">
-                    PAPER FROM THE DIRECTED STUDIES COURSE <br />
+                <Row>
+                    <Col xs={5}>
+                        <p className="font-text-style">
+                            <br />
 
-                    SPEECH FROM NATIONAL DAY REMEMBRANCE VIOLENCE AGAINST WOMEN?
+                            In Summer 2026, I completed a directed studies course titled "Access and Equity in Postseconary Mathematics Teaching".
+                            I read papers about the social model of disability and the experiences of students with invisible disabilities, math anxiety, and stereotype threat.
+                            <br />
+                            <br />
+                            My final paper focused on the causes of the underrepresentation of women in STEM, looking at potential biological factors, early school factors,
+                            and the postsecondary STEM environment. I found that at every stage of a woman's journey into STEM, she is at risk of
+                            being pushed out, specifically by factors outside of her control.
 
-                </p>
+                        </p>
+                    </Col>
+                    <Col xs={7}>
+                        <iframe
+                            src={WomenInStemFinalPaper}
+                            width="100%"
+                            height="600px%"
+                            title="PDF Viewer"
+                        />
+                    </Col>
+                </Row>
 
-
+                <br />
 
             </Container>
         </div>

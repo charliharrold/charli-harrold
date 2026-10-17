@@ -37,7 +37,7 @@ const NavigationBar = () => {
             <Nav.Link href='#work'>Work Experience</Nav.Link>
             <Nav.Link href='#volunteer'>Volunteering</Nav.Link>
             <Nav.Link href='#scholarships'>Scholarships</Nav.Link>
-            <Nav.Link href='#proud'>Things I'm Proud Of</Nav.Link>
+            <Nav.Link href='#proud'>Something I'm Proud Of</Nav.Link>
           </Nav>
         </Navbar.Collapse>
     </Navbar>
